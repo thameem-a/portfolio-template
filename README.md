@@ -9,7 +9,7 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-06B6D4?logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
-[**Live demo**](https://www.temp-portfolio.site) · [Get started](#-get-started) · [Customize](#-make-it-yours)
+[**Live demo**](https://www.temp-portfolio.site) · [Get started](#get-started) · [Customize](#make-it-yours)
 
 <br />
 
@@ -19,14 +19,14 @@
 
 <br />
 
-## ✨ Features
+## Features
 
 - **One config file.** Your bio, experience, projects, skills, education, and map pins all live in [`app/config/portfolio.ts`](app/config/portfolio.ts). No component hunting.
 - **Two ways to browse.** A split-pane page with section tabs and a live clock, plus an interactive [`/terminal`](https://www.temp-portfolio.site/terminal) view that renders the same content as a command line.
 - **Travel map.** A dark Leaflet map of the places you've lived and visited, centered on where you are now.
 - **Zero setup.** No database, no API keys, no environment variables. Fully static, so it's fast and free to host.
 
-## 🚀 Get started
+## Get started
 
 Pick whichever is easiest.
 
@@ -34,7 +34,7 @@ Pick whichever is easiest.
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fthameem-a%2Fportfolio-template&project-name=portfolio&repository-name=portfolio)
 
-Vercel copies this repo into your GitHub account and deploys it. Then clone your new repo and continue with [Make it yours](#-make-it-yours).
+Vercel copies this repo into your GitHub account and deploys it. Then clone your new repo and continue with [Make it yours](#make-it-yours).
 
 ### Option 2: Use this template
 
@@ -53,7 +53,7 @@ Open [localhost:3000](http://localhost:3000) and you're running.
 > [!NOTE]
 > Requires **Node.js 20.9 or newer**.
 
-## 🎨 Make it yours
+## Make it yours
 
 ### 1. Edit your content
 
@@ -98,7 +98,7 @@ A few fields worth knowing about:
 
 Push to `main`. If you deployed with Vercel, it redeploys automatically.
 
-## 💻 Terminal view
+## Terminal view
 
 Visit `/terminal` for a command-line version of your portfolio. Type `help` to see these commands:
 
@@ -115,7 +115,7 @@ Visit `/terminal` for a command-line version of your portfolio. Type `help` to s
 
 There are a few hidden commands too. Try `sudo`.
 
-## 📁 Project structure
+## Project structure
 
 ```
 app/
@@ -129,7 +129,7 @@ public/
 └── resume.pdf               ← replace with yours
 ```
 
-## 🛠 Scripts
+## Scripts
 
 | Command      | What it does                     |
 | ------------ | -------------------------------- |
@@ -138,14 +138,14 @@ public/
 | `pnpm start` | Serve the production build       |
 | `pnpm lint`  | Run ESLint                       |
 
-## 🧱 Built with
+## Built with
 
 [Next.js 16](https://nextjs.org) (App Router) · [React 19](https://react.dev) · TypeScript · [Tailwind CSS 4](https://tailwindcss.com) · [React Leaflet](https://react-leaflet.js.org) · Geist Mono · Map tiles by Esri
 
-## 🙏 Credits
+## Credits
 
 Design inspired by [Clean Personal Resume](https://www.figma.com/community/file/1495248085295405720/clean-personal-resume) on Figma Community.
 
-## 📄 License
+## License
 
 [MIT](LICENSE). Use it, change it, ship it. A link back is appreciated but not required.
