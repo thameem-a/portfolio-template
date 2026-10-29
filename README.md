@@ -54,7 +54,7 @@ public/
 
 ## Tech Stack
 
-Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · HeroUI · Framer Motion · React Leaflet · Lucide icons. Package manager: pnpm. Map tiles: Esri Dark Gray Canvas.
+Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · React Leaflet. Package manager: pnpm. Map tiles: Esri Dark Gray Canvas.
 
 ## License
 

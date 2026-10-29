@@ -434,7 +434,9 @@ function commonPrefix(strs: string[]): string {
 }
 
 export default function TerminalPage() {
-  const [lines, setLines] = useState<Line[]>([]);
+  const [lines, setLines] = useState<Line[]>(() => [
+    buildLine(0, "welcome", null),
+  ]);
   const [input, setInput] = useState("");
   const [cmdHistory, setCmdHistory] = useState<string[]>([]);
   const [historyIdx, setHistoryIdx] = useState(-1);
@@ -458,10 +460,6 @@ export default function TerminalPage() {
     buildLine(++lineId.current, type, content);
 
   const T = theme === "dark" ? DARK : LIGHT;
-
-  useEffect(() => {
-    setLines([newLine("welcome", null)]);
-  }, []);
 
   useEffect(() => {
     bottomRef.current?.scrollIntoView({ behavior: "smooth" });

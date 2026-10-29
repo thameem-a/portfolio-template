@@ -1,17 +1,12 @@
 "use client";
 
 import "leaflet/dist/leaflet.css";
-import { useEffect, useState } from "react";
 import { MapContainer, TileLayer, CircleMarker, Tooltip } from "react-leaflet";
 import type { MapLocation } from "../config/portfolio";
 
 type Props = { locations: MapLocation[] };
 
 export default function TravelMap({ locations }: Props) {
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => { setMounted(true); }, []);
-  if (!mounted) return <div style={{ height: "100%", width: "100%", background: "#0a0a0a" }} />;
-
   // "current" pin: map opens centered on it and it renders last (on top)
   const current = locations.find((loc) => loc.type === "current");
   const others = locations.filter((loc) => loc !== current);

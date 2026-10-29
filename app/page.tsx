@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState, useSyncExternalStore } from "react";
 import React from "react";
 import Link from "next/link";
 import dynamic from "next/dynamic";
@@ -18,17 +18,22 @@ const TravelMap = dynamic(() => import("./components/TravelMap"), {
   ssr: false,
 });
 
+function subscribeToClock(onTick: () => void) {
+  const id = setInterval(onTick, 1000);
+  return () => clearInterval(id);
+}
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState<
     "experience" | "projects" | "skills" | "education"
   >("experience");
-  const [now, setNow] = useState<Date | null>(null);
-
-  useEffect(() => {
-    setNow(new Date());
-    const id = setInterval(() => setNow(new Date()), 1000);
-    return () => clearInterval(id);
-  }, []);
+  // ticks once a second on the client; null during SSR so the clock never mismatches on hydration
+  const nowSec = useSyncExternalStore(
+    subscribeToClock,
+    () => Math.floor(Date.now() / 1000),
+    () => null,
+  );
+  const now = nowSec === null ? null : new Date(nowSec * 1000);
 
   const sections = ["experience", "projects", "skills", "education"] as const;
 
