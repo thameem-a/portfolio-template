@@ -135,11 +135,26 @@ export default function Home() {
               </a>
             </div>
 
-            <div className="border-t border-b border-white/20">
+            <div
+              className={`border-t border-white/20 ${personal.templateUrl ? "" : "border-b"}`}
+            >
               <Link href="/terminal" className="block py-2.5 hover:text-white">
                 Terminal View ↗
               </Link>
             </div>
+
+            {personal.templateUrl && (
+              <div className="border-t border-b border-white/20">
+                <a
+                  href={personal.templateUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block py-2.5 text-white/50 hover:text-white"
+                >
+                  Create your own ↗
+                </a>
+              </div>
+            )}
           </div>
 
           {/* map */}

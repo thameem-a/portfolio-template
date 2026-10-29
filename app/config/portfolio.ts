@@ -74,6 +74,8 @@ export const personal = {
   },
   // drop your resume into public/resume.pdf
   resume: "/resume.pdf",
+  // optional "Create your own" link under the contact links; "" hides it
+  templateUrl: "",
 };
 
 //  experience: newest company first; each company can hold several roles
