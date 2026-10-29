@@ -4,7 +4,7 @@ A fast, config-driven developer portfolio built with Next.js 16, React 19, and T
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fthameem-a%2Fportfolio-template&project-name=portfolio&repository-name=portfolio)
 
-**Live example:** [portfolio-kappa-orcin-24.vercel.app](https://portfolio-kappa-orcin-24.vercel.app) — built from this template by [Affan Thameem](https://github.com/thameem-a).
+**Live demo:** [portfolio-template-one-green.vercel.app](https://portfolio-template-one-green.vercel.app) — this repo as-is, with placeholder content.
 
 ## Features
 
