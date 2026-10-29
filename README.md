@@ -56,6 +56,10 @@ public/
 
 Next.js 16 (App Router) · React 19 · TypeScript · Tailwind CSS v4 · React Leaflet. Package manager: pnpm. Map tiles: Esri Dark Gray Canvas.
 
+## Credits
+
+Design inspired by [Clean Personal Resume](https://www.figma.com/community/file/1495248085295405720/clean-personal-resume) on Figma Community.
+
 ## License
 
 MIT — see [LICENSE](LICENSE). Use it, change it, ship it. A link back is appreciated but not required.
