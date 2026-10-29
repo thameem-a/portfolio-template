@@ -143,7 +143,7 @@ function Welcome() {
   return (
     <div className="space-y-0.5 pb-1">
       <p className={T.primary}>
-        {personal.name} — {personal.title}
+        {personal.name} · {personal.title}
       </p>
       <p className={T.muted}>{personal.location.label}</p>
       <p className={`${T.dim} mt-3`}>
@@ -172,7 +172,7 @@ function Help() {
       {cmds.map(([cmd, desc]) => (
         <p key={cmd}>
           <span className={`${T.primary} inline-block w-24`}>{cmd}</span>
-          <span className={`${T.dim} ml-4`}>— {desc}</span>
+          <span className={`${T.dim} ml-4`}>{desc}</span>
         </p>
       ))}
     </div>
@@ -241,7 +241,7 @@ function Experience() {
               company.name
             )}
             <span className={`${T.dim} font-normal ml-2`}>
-              — {company.location}
+              · {company.location}
             </span>
           </p>
           {company.roles.map((role, ri) => (
@@ -285,7 +285,7 @@ function Projects() {
             )}
             <span className={`${T.dim} ml-2`}>
               {project.year}
-              {project.status ? ` — ${project.status}` : ""}
+              {project.status ? ` · ${project.status}` : ""}
             </span>
           </p>
           <ul className="mt-1 ml-3 space-y-1">
@@ -311,7 +311,7 @@ function Skills() {
           <p className={`${T.dim} mb-1`}>certifications</p>
           {certifications.map((cert, ci) => (
             <p key={ci} className={`${T.secondary} ml-3`}>
-              {cert.name} <span className={T.dim}>— {cert.issuer}</span>
+              {cert.name} <span className={T.dim}>· {cert.issuer}</span>
             </p>
           ))}
         </div>
@@ -345,7 +345,7 @@ function Education() {
             ) : (
               school.name
             )}
-            <span className={`${T.dim} ml-2`}>— {school.location}</span>
+            <span className={`${T.dim} ml-2`}>· {school.location}</span>
           </p>
           <p className={`${T.secondary} ml-3`}>
             {school.degree} <span className={T.dim}>({school.period})</span>
@@ -365,7 +365,7 @@ function CmdError({ cmd }: { cmd: string }) {
   const T = useContext(ThemeCtx);
   return (
     <p className={T.error}>
-      command not found: {cmd} — type <span className={T.primary}>help</span>{" "}
+      command not found: {cmd}. type <span className={T.primary}>help</span>{" "}
       for available commands
     </p>
   );
@@ -648,7 +648,7 @@ export default function TerminalPage() {
           <p
             className={`${T.chromeText} text-[12px] tracking-wide select-none`}
           >
-            {personal.handle}@portfolio — zsh
+            {personal.handle}@portfolio · zsh
           </p>
           <Link
             href="/"

@@ -51,7 +51,7 @@ export default function TravelMap({ locations }: Props) {
           >
             <span className="font-mono text-[12px]">
               {loc.name}
-              {loc.note ? ` — ${loc.note}` : ""}
+              {loc.note ? ` · ${loc.note}` : ""}
             </span>
           </Tooltip>
         </CircleMarker>
@@ -88,7 +88,7 @@ export default function TravelMap({ locations }: Props) {
             >
               <span className="font-mono text-[12px]">
                 {current.name}
-                {current.note ? ` — ${current.note}` : ""}
+                {current.note ? ` · ${current.note}` : ""}
               </span>
             </Tooltip>
           </CircleMarker>

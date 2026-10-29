@@ -285,7 +285,7 @@ export default function Home() {
                     )}
                     <p className="text-[15px] text-white/60">
                       {project.year}
-                      {project.status ? ` — ${project.status}` : ""}
+                      {project.status ? ` · ${project.status}` : ""}
                     </p>
                   </div>
                   <div className="space-y-2 text-[15px] text-white/70 leading-relaxed">

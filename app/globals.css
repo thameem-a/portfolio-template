@@ -173,7 +173,7 @@ html, body {
   animation: cursorBlink 1s step-end infinite;
 }
 
-/* scanlines — very subtle horizontal rule overlay */
+/* scanlines: very subtle horizontal rule overlay */
 .terminal-scanlines::after {
   content: '';
   position: fixed;
@@ -189,7 +189,7 @@ html, body {
   z-index: 50;
 }
 
-/* vignette — dark radial edge */
+/* vignette: dark radial edge */
 .terminal-vignette::before {
   content: '';
   position: fixed;
